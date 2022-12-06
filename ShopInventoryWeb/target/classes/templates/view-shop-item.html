@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:include="fragments/header"></th:block>
+
+<!-- Custom styles for this page -->
+<link th:href="@{/vendor/datatables/dataTables.bootstrap4.min.css}" rel="stylesheet">
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+    <th:block th:include="fragments/sidebarLeft"></th:block>
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+            <th:block th:include="fragments/navbar"></th:block>
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+                <div id="df_Message" class="successMessage col-lg-12">
+                    <div id="message1" th:if="${message}" th:text="${message}" th:class="${'alert ' + alertClass}"></div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div id="default-0">
+                        <div class="card mb-4">
+                            <div class="card-header">Find Shop Items</div>
+                            <div class="card-body">
+                                <div class="sbp-preview">
+                                    <div class="sbp-preview-content">
+                                        <form method="POST" th:action="@{/palaceOrder/search}" class="form-inline">
+                                            <div class="form-group" style="width: 80%;">
+                                                <label for="text_parent_code" style="margin-left: 3%;">Insert Product Name(Insert Proudct Name seperate by Comma):</label>
+                                                <input type="text" id="text_parent_code" th:name="code" class="form-control" required="required" style="width:45%;margin-left: 1.5%;"/>
+                                                <input type="submit" value="Find" class="btn btn-primary" style="margin-left:  0.5%;" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div id="default">
+                        <div class="card mb-4">
+                            <div class="card-header">Shop Items</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                        <tr>
+                                            <th th:each="header: ${fieldTypeMap}" th:text="${header.getKey()}"></th>
+                                            <th>Palace Order</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr th:each="ap: ${ShopItemPackage}">
+                                            <td th:each="v: ${ap.values()}" th:text="${v}"></td>
+                                            <td>
+                                                <a th:href="@{/admin/shopItem/edit/{id}(id=${ap.get('id')})}" class="btn btn-primary btn-circle btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <th:block th:include="fragments/footer"></th:block>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<th:block th:include="fragments/scripts"></th:block>
+
+
+<!-- Page level plugins -->
+<script th:src="@{/vendor/datatables/jquery.dataTables.min.js}"></script>
+<script th:src="@{/vendor/datatables/dataTables.bootstrap4.min.js}"></script>
+
+<!-- Page level custom scripts -->
+<script th:src="@{/js/demo/datatables-demo.js}"></script>
+<script th:src="@{/js/property.js}"></script>
+</body>
+
+</html>
+

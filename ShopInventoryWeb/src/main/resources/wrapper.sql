@@ -1,0 +1,12 @@
+ create table customer_detail (id bigint not null auto_increment, customer_name varchar(255), moblie_number varchar(255), primary key (id)) engine=MyISAM
+Hibernate: create table customer_finacials (id bigint not null auto_increment, paid_amount double precision, un_paid_amount double precision, customer_id bigint, primary key (id)) engine=MyISAM
+Hibernate: create table finacials_info (id bigint not null auto_increment, collectable_amount double precision, created datetime, updated datetime, customer_id bigint, shop_item_package_id bigint, primary key (id)) engine=MyISAM
+Hibernate: create table sale_item (id bigint not null auto_increment, product_name varchar(255), qty integer not null, sale_date datetime, total_price double precision, customer_id bigint, shop_item_package_id bigint, primary key (id)) engine=MyISAM
+Hibernate: create table shop_item (id bigint not null auto_increment, expire_date datetime, item_type varchar(255), orderd_date datetime, price integer, product_name varchar(255), qty integer not null, seller_address varchar(255), seller_code varchar(255), seller_name varchar(255), shipping_charges integer, status_code varchar(255), total_paid_amount integer not null, updated datetime, weight double precision not null, primary key (id)) engine=MyISAM
+Hibernate: create table shop_item_package (id bigint not null auto_increment, item_status varchar(255), actual_price double precision, quntity integer, shop_item_id bigint, primary key (id)) engine=MyISAM
+Hibernate: alter table customer_finacials add constraint FKs5d98gr83u9kosspmdy8j42y6 foreign key (customer_id) references customer_detail (id)
+Hibernate: alter table finacials_info add constraint FK753xoxlr296ol8vp3wuv61guu foreign key (customer_id) references customer_detail (id)
+Hibernate: alter table finacials_info add constraint FK226js9qive2htb0hiug7quncc foreign key (shop_item_package_id) references shop_item_package (id)
+Hibernate: alter table sale_item add constraint FKbui6nqev67gpxljyaonqytqtm foreign key (customer_id) references customer_detail (id)
+Hibernate: alter table sale_item add constraint FKftadwvti2bgdxw1sb0nwq0sbi foreign key (shop_item_package_id) references shop_item_package (id)
+Hibernate: alter table shop_item_package add constraint FK3mna4ik3pear20wjswloe1qai foreign key (shop_item_id) references shop_item (id)
