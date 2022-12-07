@@ -1,0 +1,19 @@
+version: '3'
+services:
+  springboot:
+    container_name: elearningbyashok
+    image: ashok041999/elearningbyashok:1.0
+    ports:
+      - 8080:8080
+  mysql:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=shopInventory
+    volumes:
+      - appvolume:/var/lib/mysql
+volumes:
+  appvolume:
