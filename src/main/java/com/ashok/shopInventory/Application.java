@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 @ComponentScan(basePackages = {"com.ashok.shopInventory.web"})
 @EntityScan(basePackages = {"com.ashok.shopInventory.web.entity"})
-@EnableJpaRepositories({"com.ashok.shopInventory.web.repository"})
+@EnableJpaRepositories({"com.ashok.shopInventory.web.Repository"})
 @PropertySource({"classpath:application.properties", "classpath:db.properties"})
 public class Application {
 
