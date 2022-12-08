@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" th:href="@{/css/Estyle.css}">
+</head>
+<body>
+<div class="card-header py-3" style="text-align:center;margin-top:50px;">
+    <button style="background-color: #cddc39;color:black;border:#cddc39 solid 2px;border-radius:8px;width:400px;height:60px;"><b> <h2>  Scroll Left OR Right </h2> </b></button>
+</div>
+<div id="header">
+    <table>
+        <tr>
+            <td th:each="course : ${courses}" style="padding: 15px;">
+                <a th:href="@{/Eedu/compitation/{course}(course=${course})}" class="card education">
+                    <div class="overlay"></div>
+                    <div class="circle">
+
+                        <svg width="71px" height="76px" viewBox="29 14 71 76" version="1.1" >
+                            <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                                <g id="Group-8" fill="#D98A19">
+                                    <g id="Group-7">
+                                        <g id="Group-6">
+                                            <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="round">
+                                    <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                                    <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                                    <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                                    <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                                    <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                                    <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                                    <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                                    <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                                    <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                                    <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                                    <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                                    <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                                    <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <p th:text="${course}"> </p>
+                    <a th:href="@{/Checkout/Buy/{course}(course=${course})}"><button style="text-align:center;height:30px;width:220px;background-color:#23e62b;border-radius:8px;">Buy Now</button></a>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

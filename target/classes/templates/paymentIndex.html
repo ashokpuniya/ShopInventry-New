@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:th='http://www.thymeleaf.org'>
+<head>
+  <title>Checkout</title>
+  <link th:href="@{/css/payment.css}" rel="stylesheet" type="text/css">
+  <style>
+            body {
+                font-family: 'arial';
+            }
+            #checkout-form input,
+            #checkout-form button {
+                display: block;
+                margin: 12px;
+            }
+        </style>
+</head>
+<body>
+
+<div class="payment-options-wrapper row">
+  <div class="payment-coupon-block col s12 m8 l8">
+    <div class="back-option">
+      <span>Order Summary</span>
+    </div>
+    <div class="coupon-payment-method-wrap row">
+      <div class="plan-coupon-wrap col s12 m12 l4">
+        <div class="selected-plan">
+          <div class="pricing">
+            <span class="left">Basic</span>
+            <span class="right" th:text="${'₹ '+amount}"></span>
+          </div>
+          <div>Valid for 1 year</div>
+        </div>
+        <div class="coupons-list-wrap">
+          <div class="coupon-input">
+            <input type="text" name="coupon" id="coupon" />
+            <button class="apply-coupon">Apply</button>
+          </div>
+        </div>
+      </div>
+      <div class="pay-option-wrap col s12 m12 l6">
+        <div class="payment-options">
+          <p>Payment Options</p>
+
+          <div class="proceed-pay-wrapper row">
+            <div class="final-price col s5 m5 l5">
+              <p>Final Amount</p>
+              <p><b th:text="${'&#8377; '+amount}"> </b></p>
+            </div>
+            <form th:action='@{/Charge/makePayment/{course}/{amount}(course=${course},amount=${amount})}' method='POST' id='checkout-form'>
+              <div class="proceed-pay-div col s7 m7 l7">
+                <input type='hidden' th:value='${amount}' name='amount' />
+              </div>
+              <script
+                      src='https://checkout.stripe.com/checkout.js'
+                      class='stripe-button'
+                      th:attr='data-key=${stripePublicKey},
+                         data-amount=${finalAmount},
+                         data-currency=${currency}'
+                      data-name='Elearning website'
+                      data-description='Payment Checkout'
+                      data-image=''
+                      data-locale='auto'
+                      data-zip-code='false'>
+              </script>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="pay-option-wrap col s12 m12 l6">
+        <img alt="image" th:src="@{'http://localhost:8082/Checkout/manual/view/getQRCode?code='+${qrCodeData}}" style="width: 300px;height: 300px;"/>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

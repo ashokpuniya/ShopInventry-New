@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ELearningByAshok.iml" filepath="$PROJECT_DIR$/ELearningByAshok.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShopInventoryWeb/ShopInventoryWeb.iml" filepath="$PROJECT_DIR$/ShopInventoryWeb/ShopInventoryWeb.iml" />
     </modules>
   </component>

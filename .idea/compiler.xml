@@ -7,20 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ShopInventoryWeb" />
+        <module name="ELearningByAshok" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ShopInventory" target="1.8" />
-      <module name="ShopInventoryBase" target="1.5" />
-      <module name="ShopInventoryClient" target="1.5" />
-      <module name="ShopInventoryCore" target="1.5" />
-      <module name="ShopInventoryService" target="1.8" />
+      <module name="ELearningByAshok" target="1.8" />
       <module name="ShopInventoryWeb" target="1.8" />
-      <module name="ShopInventry" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ELearningByAshok" options="-parameters" />
       <module name="ShopInventoryWeb" options="-parameters" />
     </option>
   </component>
