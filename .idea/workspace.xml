@@ -10,24 +10,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3140d7-13ec-4bff-a0af-5982c3b41946" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ashok_shopInventory_base_ShopInventoryBase_4_0_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ashok_shopInventory_core_ShopInventoryCore_4_0_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ashok_shopInventory_service_ShopInventoryService_4_0_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hibernate5_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hppc_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs/localhost_access_log.2022-12-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs/localhost_access_log.2022-12-08.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs/localhost_access_log.2022-12-08.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashok/shopInventory/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashok/shopInventory/web/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/SuccessStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/SuccessStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/startQuizStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/startQuizStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/SuccessJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/SuccessJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/quizScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/quizScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Eindexx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Estyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/SignUpForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/SuccessPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/SuccessPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createQuiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/exstartQuiz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/exstartQuiz2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/paymentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/paymentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startQuiz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startQuizNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startQuizNew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-shop-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/watchPdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/watchPdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/watchVideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/watchVideo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ELearningByAshok.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ELearningByAshok.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ELearningByAshok.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ELearningByAshok.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ashok/shopInventory/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ashok/shopInventory/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ashok/shopInventory/web/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ashok/shopInventory/web/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/SuccessStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/SuccessStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/startQuizStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/startQuizStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/SuccessJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/SuccessJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/quizScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/quizScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Eindexx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Estyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/SignUpForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/SuccessPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/SuccessPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/createQuiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/createQuiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/exstartQuiz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/exstartQuiz2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/loginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/paymentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/paymentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shopscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shopstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/startQuiz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/startQuizNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/startQuizNew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/view-shop-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/watchPdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/watchPdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/watchVideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/watchVideo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
